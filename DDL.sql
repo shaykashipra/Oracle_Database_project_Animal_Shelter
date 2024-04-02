@@ -32,7 +32,7 @@ CREATE TABLE animals (
 
 CREATE TABLE adoptions (
     adoption_id number PRIMARY KEY,
-    animal_id NUMBER,
+    animal_id NUMBER UNIQUE,
     adoption_date date,
     descriptions varchar2(100),
     FOREIGN KEY (animal_id) REFERENCES animals(animal_id) ON DELETE CASCADE
