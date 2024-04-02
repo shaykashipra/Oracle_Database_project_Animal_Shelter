@@ -82,7 +82,7 @@ INSERT INTO owners (owner_id,firstname,lastname,owner_address,adoption_id,adopte
 INSERT INTO owners (owner_id,firstname,lastname,owner_address,adoption_id,adopted_at) VALUES (3,'Samiul','Islam','Sylhet',3,TO_DATE('2023-04-25','YYYY-MM-DD'));
 
 
---contraint error
+--constraint error
 INSERT INTO boxes (box_id,max_capacity,current_capacity,species) VALUES (7,100,150,'Birds');
 INSERT INTO animals (animal_id,animal_name,species,joined_at,left_at,box_id,health,animal_status) VALUES (11,'Flash','Turtle',TO_DATE('2023-03-01','YYYY-MM-DD'),TO_DATE('2023-01-01','YYYY-MM-DD'),1,'Good','Healthy');
 INSERT INTO employees (emp_id,firstname,lastname,salary,joined_at) VALUES (11,'Shayka','Islam',-100,TO_DATE('2023-01-01','YYYY-MM-DD'));
