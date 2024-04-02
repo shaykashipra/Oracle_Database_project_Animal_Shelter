@@ -127,16 +127,6 @@ ALTER TABLE duties ADD CONSTRAINT check_dates CHECK (end_at IS NULL OR end_at>st
 --                       Trigger
 ------------------------------------------------------------------
 
--- --trigger after animal is inserted 
--- CREATE OR REPLACE TRIGGER trigger_after_animal_inserted
--- AFTER INSERT ON animals
--- REFERENCING OLD as o NEW AS n
--- FOR EACH ROW
--- BEGIN
---     UPDATE boxes b SET b.current_capacity=b.current_capacity-1 WHERE b.box_id=:n.box_id;
--- END;
--- /
-
 
 -- Trigger to increase box capacity after an animal is deleted
 CREATE OR REPLACE TRIGGER trigger_after_animal_deleted
