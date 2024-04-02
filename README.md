@@ -1,1 +1,1 @@
-<img src="relational-diagram.png">
+<img src="relations-diagram.png">
